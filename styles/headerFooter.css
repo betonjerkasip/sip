@@ -1,0 +1,225 @@
+
+/* NAVIGATION */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height, 70px);
+}
+
+@media(min-width: 992px){
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
+  display: block;
+  margin-top: 0;
+  margin-left: 0;
+  margin: 0 !important;
+} }
+
+.navbar .container-fluid{
+    padding-right: clamp(1rem, 3vw, 3rem);
+    padding-left: clamp(1rem, 3vw, 3rem);
+}
+
+.dropdown-menu .dropdown-item::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover::after {
+    width: calc(70% - 20px);
+}
+
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+
+.logo{
+    width: clamp(40px, 8vw, 70px);
+    height: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+.navbar .navbar-toggler {
+    border-color: transparent;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3Cpath%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-miterlimit='10'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E");
+}
+
+.navbar{
+    background-color:var(--primary-color) !important;
+    z-index: 1030;
+    width: 100%;
+}
+
+
+.navbar-brand{
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem) !important; 
+}
+
+
+.navbar, .navbar .nav-boja, .navbar .navbar-brand, .navbar .navbar-toggler {
+     color: var(--background-color) !important; 
+    }
+
+
+.navbar .nav-boja:hover, .navbar {
+    color: var(--accent-color) !important;
+}
+
+.dropdown-menu {
+    border-radius: 10px !important;
+    margin-top: 10px;
+}
+.dropdown-item {
+    border-radius: 4px !important;
+    margin: 0 !important;
+}
+
+.nav-link:focus, .dropdown-item:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.navbar-nav > li > .nav-link {
+    position: relative;
+}
+
+.navbar-nav > li > .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--background-color);
+    transition: 0.3s ease;
+}
+
+
+.dropdown-menu li {
+position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: 0px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.navbar .navbar-nav .nav-item .kontakt-btn {
+    background-color: var(--background-color) !important;
+    color: var(--primary-color) !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item .kontakt-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        margin-right: 30px;
+    }
+}
+
+.dropdown-menu {
+    min-width: 260px;
+    width: max-content;
+    max-width: none;
+}
+.dropdown-menu .dropdown-item {
+    white-space: nowrap;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, var(--primary-color), #182555);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 85px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.f-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.f-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer_logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.f-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.f-li{
+    list-style: none;
+    margin-bottom: 12px;
+    transform: translateX(-28px);
+}
+
+.f-a{
+    text-decoration: none;
+    color: #fff;
+}
+.f-a:hover{
+    text-decoration: underline;
+}
+.f-hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    margin: 20px auto;
+}
+.f-i{
+    width: 22px;
+}
+
+.footer_copyright{
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    footer{
+        bottom: unset;
+    }
+    .f-col{
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <meta name="description" content="Kontaktirajte Betonjerku SIP za informacije o proizvodima, cenama, poručivanju i isporuci gotovog betona i betonskih proizvoda.">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/headerFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.jpg">
+</head>
+<body>
+    <div id="navbar"></div>
+    
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="c">
+            <div class="c-naziv">
+                <h2>Kontaktirajte nas</h2>
+                <hr>
+                <input type="hidden" name="access_key" value="ff643e9d-62dd-411f-8a36-cf2dad4c9661">
+                <input type="text" name="ime" placeholder="Ime i prezime" class="c-inputs" required>
+                <input type="email" name="email" placeholder="Email" class="c-inputs" required>
+                <textarea name="poruka" placeholder="Vaša poruka" class="c-inputs" required></textarea>
+                <button type="submit" class="c-btn">Pošalji <img src="/assets/strelica.png" alt=""></button>
+            </div>
+        </form>
+        <div class="c-desno">
+            <h2>Kontakt informacije</h2>
+            <hr>
+
+            <div class="info-card">
+                <h4><img src="/assets/adresa-plavo.png" alt="no img" class="c-i"> Adresa</h4>
+                <p>Ulica i broj<br>Krćevački put 241A, 34304, Banja, Srbija</p>
+            </div>
+
+            <div class="info-card">
+                <h4><img src="/assets/telefon-plavo.png" alt="no img" class="c-i"> Telefon</h4>
+                <p>+381 64643276</p>
+            </div>
+
+            <div class="info-card">
+                <h4><img src="/assets/mail-plavo.png" alt="no img" class="c-i"> Email</h4>
+                <p>betonjerkasip80@gmail.com</p>
+            </div>
+
+            <div class="info-card">
+                <h4><img src="/assets/sat-plavo.png" alt="no img" class="c-i"> Radno vreme</h4>
+                <p>
+                    Ponedeljak - Petak: 08:00 - 16:00<br>
+                    Subota - Nedelja: Neradna
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <section class="mapa">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8401.151093119855!2d20.625566579673027!3d44.2899659961017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47574b421ad6b791%3A0xd49f4a3a2567d065!2sBeton%20i%20betonska%20galanterija%2C%20Betonjerka%20SIP!5e1!3m2!1ssr!2srs!4v1784477305817!5m2!1ssr!2srs"
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <div id="footer"></div>
+
+<script src="/java.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
