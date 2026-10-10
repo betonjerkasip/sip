@@ -341,7 +341,7 @@ body {
     .product-card .product-info{
     padding:20px 25px;
 
-}
+}}
 .cta {
     margin:80px 8%;
     padding:70px 30px;
@@ -364,7 +364,7 @@ body {
 .cta .primary-btn {
     background:white;
     color:var(--primary-color);
-}}
+}
 
 @media(max-width:1000px){
     .welcome,
