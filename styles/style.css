@@ -364,7 +364,7 @@ body {
 .cta .primary-btn {
     background:white;
     color:var(--primary-color);
-}
+}}
 
 @media(max-width:1000px){
     .welcome,
